@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-deepBlack text-textMain font-sans antialiased overflow-x-hidden;
+    cursor: default; /* We will use a custom cursor later, but ensure clean default */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight text-textMain;
+  }
+}
+
+@layer components {
+  /* Hide scrollbar for clean aesthetics */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-primary;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-secondary rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent;
+  }
+
+  .glass-card {
+    @apply bg-cardBg backdrop-blur-md border border-white/10 rounded-2xl shadow-xl;
+  }
+}
+
+/* Base styles to prevent FOUC with GSAP */
+.gsap-reveal {
+  opacity: 0;
+  visibility: hidden;
+}
