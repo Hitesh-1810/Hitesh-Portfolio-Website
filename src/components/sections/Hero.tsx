@@ -67,7 +67,7 @@ export function Hero() {
             {/* Clean, minimalist image container */}
             <div className="relative aspect-[4/5] rounded-xl overflow-hidden border border-white/10 shadow-2xl z-10 bg-deepBlack">
               <img 
-                src="/profile.jpeg" 
+                src="/profile.png" 
                 alt="Hitesh Girase"
                 className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
               />
