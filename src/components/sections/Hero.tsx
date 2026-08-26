@@ -24,7 +24,7 @@ export function Hero() {
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 w-full grid lg:grid-cols-12 gap-12 items-center relative z-10">
         
         {/* Text Content */}
-        <div className="lg:col-span-7 pt-12 lg:pt-0">
+        <div className="order-2 lg:order-1 lg:col-span-7 pt-2 lg:pt-0">
           <div className="hero-anim flex items-center gap-3 mb-8">
             <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
             <span className="text-xs tracking-[0.2em] uppercase text-white/90">Open to opportunities</span>
@@ -59,8 +59,8 @@ export function Hero() {
         </div>
 
         {/* Image Content */}
-        <div className="lg:col-span-5 relative hidden lg:block">
-          <div className="hero-anim relative w-full max-w-[340px] ml-auto">
+        <div className="order-1 lg:order-2 lg:col-span-5 relative mt-8 lg:mt-0 mb-8 lg:mb-0">
+          <div className="hero-anim relative w-full max-w-[280px] sm:max-w-[340px] mx-auto lg:ml-auto">
             {/* Subtle atmospheric glow behind */}
             <div className="absolute inset-0 bg-accent/10 blur-[60px] rounded-full translate-y-8" />
             
