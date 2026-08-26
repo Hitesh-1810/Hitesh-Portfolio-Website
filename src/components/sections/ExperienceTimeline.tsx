@@ -28,16 +28,16 @@ const experience = [
 
 export function ExperienceTimeline() {
   return (
-    <section id="experience" className="py-32 bg-charcoal text-white border-t border-white/5">
+    <section id="experience" className="py-16 md:py-32 bg-charcoal text-white border-t border-white/5">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-        <div className="mb-20">
+        <div className="mb-10 md:mb-20">
           <h2 className="text-xl md:text-2xl tracking-[0.2em] uppercase font-bold text-accent mb-4">Experience</h2>
           <h3 className="text-4xl md:text-5xl lg:text-[4rem] font-serif leading-[1.1] text-white">
             Professional Timeline.
           </h3>
         </div>
 
-        <div className="flex flex-col border-l border-white/10 ml-2 md:ml-4 space-y-20 py-4">
+        <div className="flex flex-col border-l border-white/10 ml-2 md:ml-4 space-y-10 md:space-y-20 py-4">
           {experience.map((item, index) => (
             <div key={index} className="group relative pl-8 md:pl-16">
               

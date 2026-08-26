@@ -16,7 +16,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section ref={containerRef} className="relative min-h-screen flex items-center pt-24 bg-deepBlack overflow-hidden">
+    <section ref={containerRef} className="relative min-h-screen flex items-center pt-24 md:pt-32 bg-deepBlack overflow-hidden">
       {/* Subtle graphic elements */}
       <div className="absolute top-0 right-[20%] w-[1px] h-screen bg-white/5 hidden lg:block" />
       <div className="absolute top-[30%] left-0 w-screen h-[1px] bg-white/5 hidden lg:block" />
