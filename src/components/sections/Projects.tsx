@@ -59,7 +59,7 @@ export function Projects() {
         </div>
 
         <div className="space-y-32">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <div key={project.id} className="group relative border-t border-white/10 pt-16">
               
               <div className="flex flex-col lg:flex-row gap-16">
