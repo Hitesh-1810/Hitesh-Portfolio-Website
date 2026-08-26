@@ -120,7 +120,7 @@ export function CanvasScroll() {
   }, []);
 
   return (
-    <section ref={containerRef} className="relative h-screen bg-deepMaroon overflow-hidden">
+    <section ref={containerRef} className="relative h-[800px] bg-deepMaroon overflow-hidden">
       <div className="absolute inset-0 z-0 flex items-center justify-center">
         <canvas
           ref={canvasRef}
