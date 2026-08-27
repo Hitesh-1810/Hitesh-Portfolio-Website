@@ -43,6 +43,7 @@ const projects = [
     solution: 'A geospatial pipeline that processes multispectral satellite imagery to automatically compute critical environmental indices, providing actionable insights into ecological health.',
     modules: ['Satellite Imagery Acquisition', 'Band Math Operations', 'Index Calculation (NDVI, NDWI, BSI)', 'Geospatial Masking', 'Visual Mapping'],
     technologies: ['Python', 'Rasterio', 'EarthPy', 'NumPy', 'Matplotlib'],
+    architecture: ['Sentinel-2 Imagery', 'Multispectral Processing', 'Compute Indices', 'Color Mapping', 'Environmental Insights']
   },
   {
     id: '05',
