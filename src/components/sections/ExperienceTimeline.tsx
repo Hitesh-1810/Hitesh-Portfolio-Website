@@ -28,7 +28,7 @@ const experience = [
 
 export function ExperienceTimeline() {
   return (
-    <section id="experience" className="py-16 md:py-32 bg-charcoal text-white border-t border-white/5">
+    <section id="experience" className="py-12 md:py-20 bg-charcoal text-white border-t border-white/5">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-12">
         <div className="mb-10 md:mb-20">
           <h2 className="text-xl md:text-2xl tracking-[0.2em] uppercase font-bold text-accent mb-4">Experience</h2>

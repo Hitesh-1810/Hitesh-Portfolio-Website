@@ -13,7 +13,7 @@ const skillCategories = [
 
 export function Capabilities() {
   return (
-    <section id="capabilities" className="py-16 md:py-32 bg-deepBlack text-white border-t border-white/5 relative">
+    <section id="capabilities" className="py-12 md:py-20 bg-deepBlack text-white border-t border-white/5 relative">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         <div className="w-full">
           <div className="mb-12">

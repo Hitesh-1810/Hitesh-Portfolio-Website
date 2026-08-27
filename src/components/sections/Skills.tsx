@@ -39,7 +39,7 @@ export function Skills() {
   ];
 
   return (
-    <Section id="skills" className="py-16 md:py-32">
+    <Section id="skills" className="py-12 md:py-20">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <h2 className="text-sm font-medium text-accent tracking-wider uppercase mb-4">Technical Arsenal</h2>
