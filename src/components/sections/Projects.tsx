@@ -50,7 +50,7 @@ const projects = [
 export function Projects() {
   return (
     <section id="work" className="py-16 md:py-32 bg-charcoal text-white border-t border-white/5">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-12">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-12">
         <div className="mb-12 md:mb-24">
           <h2 className="text-xl md:text-2xl tracking-[0.2em] uppercase font-bold text-accent mb-4">PROJECTS</h2>
           <h3 className="text-4xl md:text-5xl lg:text-[4rem] font-serif leading-[1.1] text-white">

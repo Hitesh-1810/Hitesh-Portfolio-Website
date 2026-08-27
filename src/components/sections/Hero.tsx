@@ -4,7 +4,8 @@ import { Button } from '../ui/Button';
 
 export function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
-  
+
+
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo('.hero-anim', 
@@ -16,10 +17,10 @@ export function Hero() {
   }, []);
 
   return (
-    <section ref={containerRef} className="relative min-h-[800px] flex items-center pt-24 md:pt-32 bg-deepBlack overflow-hidden">
+    <section ref={containerRef} className="relative min-h-[100svh] flex items-center pt-24 md:pt-32 bg-deepBlack overflow-hidden">
       {/* Subtle graphic elements */}
       <div className="absolute top-0 right-[20%] w-[1px] h-full bg-white/5 hidden lg:block" />
-      <div className="absolute top-[30%] left-0 w-screen h-[1px] bg-white/5 hidden lg:block" />
+      <div className="absolute top-[30%] left-0 w-full h-[1px] bg-white/5 hidden lg:block" />
 
       <div className="max-w-[1400px] mx-auto px-6 md:px-12 w-full grid lg:grid-cols-12 gap-12 items-center relative z-10">
         
@@ -30,7 +31,7 @@ export function Hero() {
             <span className="text-xs tracking-[0.2em] uppercase text-white/90">Open to opportunities</span>
           </div>
           
-          <h1 className="hero-anim text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.1] font-serif mb-8 text-white">
+          <h1 className="hero-anim text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.1] font-serif mb-8 text-white">
             I build AI systems that turn data into <span className="text-accent italic">useful decisions.</span>
           </h1>
           
@@ -45,13 +46,13 @@ export function Hero() {
           </div>
           
           <div className="hero-anim flex flex-wrap items-center gap-4 mt-8">
-            <a href="#work">
-              <Button className="bg-white text-black hover:bg-white/90 text-sm font-semibold tracking-widest uppercase px-8">
+            <a href="#work" className="w-full sm:w-auto">
+              <Button className="w-full sm:w-auto bg-white text-black hover:bg-white/90 text-sm font-semibold tracking-widest uppercase px-8">
                 View My Work
               </Button>
             </a>
-            <a href="#contact">
-              <Button variant="outline" className="border-white/30 text-white hover:bg-white hover:text-black text-sm font-semibold tracking-widest uppercase px-8">
+            <a href="#contact" className="w-full sm:w-auto">
+              <Button variant="outline" className="w-full sm:w-auto border-white/30 text-white hover:bg-white hover:text-black text-sm font-semibold tracking-widest uppercase px-8">
                 Let's Connect
               </Button>
             </a>

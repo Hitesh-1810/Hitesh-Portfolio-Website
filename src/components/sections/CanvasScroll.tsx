@@ -12,6 +12,7 @@ export function CanvasScroll() {
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
+
   useEffect(() => {
     const canvas = canvasRef.current;
     const container = containerRef.current;
@@ -78,6 +79,7 @@ export function CanvasScroll() {
           scrub: 0.5,
           pin: true,
           anticipatePin: 1,
+          invalidateOnRefresh: true,
           onLeave: () => {
             gsap.to(container, { autoAlpha: 0, duration: 0.5 });
           },
@@ -120,7 +122,7 @@ export function CanvasScroll() {
   }, []);
 
   return (
-    <section ref={containerRef} className="relative h-[800px] bg-deepMaroon overflow-hidden">
+    <section ref={containerRef} className="relative h-[100svh] bg-deepMaroon overflow-hidden">
       <div className="absolute inset-0 z-0 flex items-center justify-center">
         <canvas
           ref={canvasRef}
@@ -130,17 +132,17 @@ export function CanvasScroll() {
 
       <div className="relative z-10 w-full h-full flex items-center justify-center">
         <div className="max-w-5xl mx-auto px-6 text-center relative w-full h-full">
-          <h2 className="cine-text-1 absolute inset-0 flex items-center justify-center text-4xl md:text-6xl font-serif text-white opacity-0 translate-y-12">
+          <h2 className="cine-text-1 absolute inset-0 flex items-center justify-center text-3xl sm:text-4xl md:text-6xl font-serif text-white opacity-0 translate-y-12">
             "I DON'T JUST WORK WITH DATA."
           </h2>
-          <h2 className="cine-text-2 absolute inset-0 flex items-center justify-center text-4xl md:text-6xl font-serif text-white opacity-0 translate-y-12">
+          <h2 className="cine-text-2 absolute inset-0 flex items-center justify-center text-3xl sm:text-4xl md:text-6xl font-serif text-white opacity-0 translate-y-12">
             "I TURN DATA INTO INSIGHT."
           </h2>
-          <h2 className="cine-text-3 absolute inset-0 flex items-center justify-center text-4xl md:text-6xl font-serif text-white opacity-0 translate-y-12">
+          <h2 className="cine-text-3 absolute inset-0 flex items-center justify-center text-3xl sm:text-4xl md:text-6xl font-serif text-white opacity-0 translate-y-12">
             "I BUILD INTELLIGENT SYSTEMS."
           </h2>
           <div className="cine-text-4 absolute inset-0 flex flex-col items-center justify-center opacity-0 translate-y-12">
-            <h2 className="text-5xl md:text-7xl font-serif text-white mb-6 drop-shadow-2xl">
+            <h2 className="text-4xl sm:text-5xl md:text-7xl font-serif text-white mb-6 drop-shadow-2xl">
               HITESH GIRASE
             </h2>
             <div className="flex items-center gap-4">
