@@ -13,7 +13,7 @@ export function Contact() {
 
         <div className="grid md:grid-cols-2 gap-16 border-t border-white/10 pt-16 mt-auto">
           <div>
-            <p className="text-lg text-white/70 max-w-md leading-relaxed mb-8">
+            <p className="text-lg text-white/70 max-w-md leading-relaxed mb-8 text-balance">
               I am currently open to new opportunities, collaborations, and conversations about AI, Data Science, and Software Engineering.
             </p>
             <a 
