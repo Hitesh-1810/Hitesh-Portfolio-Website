@@ -11,7 +11,7 @@ export function About() {
             <div className="mb-12">
               <h2 className="text-xl md:text-2xl tracking-[0.2em] uppercase font-bold text-accent mb-4">ABOUT</h2>
               <h3 className="text-4xl md:text-5xl lg:text-[4rem] font-serif leading-[1.1] text-white">
-                Personal Background.
+                Career Summary.
               </h3>
             </div>
           </div>
