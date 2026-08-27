@@ -43,7 +43,105 @@ const projects = [
     solution: 'A geospatial pipeline that processes multispectral satellite imagery to automatically compute critical environmental indices, providing actionable insights into ecological health.',
     modules: ['Satellite Imagery Acquisition', 'Band Math Operations', 'Index Calculation (NDVI, NDWI, BSI)', 'Geospatial Masking', 'Visual Mapping'],
     technologies: ['Python', 'Rasterio', 'EarthPy', 'NumPy', 'Matplotlib'],
-    architecture: ['Sentinel-2 Imagery', 'Multispectral Processing', 'Compute Indices', 'Color Mapping', 'Environmental Insights']
+  },
+  {
+    id: '05',
+    title: 'Sentiment Analysis System',
+    subtitle: 'Opinion Mining for Customer Feedback',
+    image: '/sentiment analysis.jpg',
+    problem: 'Businesses struggle to manually process thousands of customer reviews to gauge public opinion, leading to slow response times and missed insights.',
+    solution: 'An NLP-powered sentiment analysis tool that automatically classifies textual feedback into positive, negative, or neutral categories with high accuracy.',
+    modules: ['Text Tokenization', 'Stopword Removal', 'Vectorization', 'Sentiment Classification'],
+    technologies: ['Python', 'NLTK', 'Scikit-learn', 'TF-IDF', 'Naive Bayes'],
+    architecture: ['Raw Text Data', 'Preprocessing', 'Feature Extraction', 'Model Prediction', 'Sentiment Output']
+  },
+  {
+    id: '06',
+    title: 'Iris Flower Classification',
+    subtitle: 'Botanical Species Identification',
+    image: '/Iris Flower.jpg',
+    problem: 'Classifying plant species manually requires expert botanical knowledge and is prone to human error when dealing with very similar species.',
+    solution: 'A machine learning model trained on the classic Iris dataset to classify flowers into their precise species based on sepal and petal dimensions.',
+    modules: ['Data Exploration', 'Feature Scaling', 'Model Training', 'Evaluation'],
+    technologies: ['Python', 'Pandas', 'Matplotlib', 'Scikit-learn', 'SVM'],
+    architecture: ['Input Dimensions', 'Data Normalization', 'Classification Model', 'Species Prediction']
+  },
+  {
+    id: '07',
+    title: 'Diabetes Prediction Model',
+    subtitle: 'Early Diagnostic Tool for Healthcare',
+    image: '/Diabetes-Prediction.jpg',
+    problem: 'Early detection of diabetes is critical for effective treatment, but identifying at-risk patients from large volumes of medical data is challenging.',
+    solution: 'A predictive analytics system that evaluates patient medical metrics (like glucose levels, BMI, and age) to forecast the likelihood of developing diabetes.',
+    modules: ['Data Imputation', 'Outlier Handling', 'Binary Classification', 'Risk Scoring'],
+    technologies: ['Python', 'Scikit-learn', 'Logistic Regression', 'Random Forest'],
+    architecture: ['Patient Medical Data', 'Data Cleaning', 'ML Classification', 'Diagnostic Alert']
+  },
+  {
+    id: '08',
+    title: 'Wine Quality Prediction',
+    subtitle: 'Physicochemical Analysis & Grading',
+    image: '/Wine prediction.jpg',
+    problem: 'Determining the quality of wine traditionally requires expert sommeliers and time-consuming tasting sessions, which is not scalable for production.',
+    solution: 'A regression and classification model that predicts wine quality scores strictly based on objective physicochemical tests (acidity, pH, alcohol content, etc.).',
+    modules: ['Correlation Analysis', 'Data Balancing', 'Regression Modeling', 'Quality Categorization'],
+    technologies: ['Python', 'NumPy', 'Pandas', 'XGBoost', 'Decision Trees'],
+    architecture: ['Chemical Properties Input', 'Feature Engineering', 'Predictive Model', 'Quality Grade']
+  },
+  {
+    id: '09',
+    title: 'Color Recognition System',
+    subtitle: 'Automated RGB and Color Name Detection',
+    image: '/color recognition.jpg',
+    problem: 'Accurately identifying and naming specific colors from digital images is difficult for visually impaired users or automated sorting systems.',
+    solution: 'A computer vision application that processes image pixels and maps RGB values to their closest human-readable color names using a predefined dataset.',
+    modules: ['Image Processing', 'RGB Extraction', 'Distance Calculation', 'Interactive UI'],
+    technologies: ['Python', 'OpenCV', 'Pandas', 'NumPy'],
+    architecture: ['Input Image', 'User Click Event', 'Extract RGB Values', 'Display Color Name']
+  },
+  {
+    id: '10',
+    title: 'Car Price Prediction Engine',
+    subtitle: 'Market Value Estimation for Used Vehicles',
+    image: '/Car Price Prediction.jpg',
+    problem: 'The used car market is highly volatile, making it difficult for buyers and sellers to determine a fair market price based on historical data.',
+    solution: 'A machine learning regression tool that analyzes features like mileage, brand, year, and fuel type to accurately estimate the current market value of a vehicle.',
+    modules: ['Categorical Encoding', 'EDA', 'Model Training', 'Error Metric Evaluation'],
+    technologies: ['Python', 'Scikit-learn', 'Linear Regression', 'Random Forest'],
+    architecture: ['Vehicle Specifications', 'Data Preprocessing', 'Regression Model', 'Price Estimation']
+  },
+  {
+    id: '11',
+    title: 'Email Spam Filtering',
+    subtitle: 'Automated Threat and Junk Mail Detection',
+    image: '/email spam filter.jpg',
+    problem: 'The exponential growth of unsolicited spam and phishing emails wastes user time and poses significant security threats to personal networks.',
+    solution: 'A text-classification model that uses natural language processing to analyze email content and metadata, distinguishing between legitimate and spam messages.',
+    modules: ['Text Cleaning', 'Word Embeddings', 'Spam Classification', 'False-Positive Tuning'],
+    technologies: ['Python', 'NLTK', 'Scikit-learn', 'Naive Bayes'],
+    architecture: ['Incoming Email Text', 'NLP Vectorization', 'Spam Classifier Model', 'Inbox Routing']
+  },
+  {
+    id: '12',
+    title: 'Fake News Classification',
+    subtitle: 'Misinformation Detection via NLP',
+    image: '/fake news classification.jpg',
+    problem: 'The rapid spread of misinformation and unverified news articles on social media platforms causes public confusion and manipulation.',
+    solution: 'An AI-driven fact-checking assistant that parses news headlines and article bodies to classify the content as reliable or fake based on linguistic patterns.',
+    modules: ['Text Normalization', 'Deep Learning Classification', 'Probability Scoring'],
+    technologies: ['Python', 'TensorFlow/Keras', 'LSTM', 'NLTK'],
+    architecture: ['Article Text', 'Sequential Word Processing', 'Deep Neural Network', 'Authenticity Score']
+  },
+  {
+    id: '13',
+    title: 'Handwritten Digit Recognition',
+    subtitle: 'Optical Character Recognition using CNNs',
+    image: '/handwritten digit recognition.jpg',
+    problem: 'Digitizing handwritten documents requires robust Optical Character Recognition (OCR) systems that can handle immense variations in human handwriting.',
+    solution: 'A deep learning model trained on the MNIST dataset using Convolutional Neural Networks to achieve near-human accuracy in recognizing handwritten digits.',
+    modules: ['Image Grayscaling', 'Convolutional Layers', 'Softmax Classification'],
+    technologies: ['Python', 'TensorFlow', 'Keras', 'OpenCV'],
+    architecture: ['Handwritten Input Image', 'CNN Feature Extraction', 'Dense Layers', 'Digit Classification Output']
   }
 ];
 
